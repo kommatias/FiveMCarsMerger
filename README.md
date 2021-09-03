@@ -17,3 +17,5 @@ Merge FiveM cars into a single resource
 ```bash
 ./FiveMCarsMerger --clean --input-path "cars" --output-path "merged-cars"
 ```
+
+Demo: [https://asciinema.org/a/m38nDlDwAcqOYzpVCEeFXPnIS](https://asciinema.org/a/m38nDlDwAcqOYzpVCEeFXPnIS)
