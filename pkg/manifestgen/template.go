@@ -5,53 +5,53 @@ game 'gta5'
 
 files {
 	{{ if .HasCarcols -}}
-	'data/carcols/**.meta',
+	'data/carcols/*.meta',
 	{{ end -}}
 	{{ if .HasCarvariations -}}
-	'data/carvariations/**.meta',
+	'data/carvariations/*.meta',
 	{{ end -}}
 	{{ if .HasContentUnlocks -}}
-	'data/contentunlocks/**.meta',
+	'data/contentunlocks/*.meta',
 	{{ end -}}
 	{{ if .HasHandling -}}
-	'data/handling/**.meta',
+	'data/handling/*.meta',
 	{{ end -}}
 	{{ if .HasVehicleLayouts -}}
-	'data/vehiclelayouts/**.meta',
+	'data/vehiclelayouts/*.meta',
 	{{ end -}}
 	{{ if .HasVehicleModelsets -}}
-	'data/vehiclemodelsets/**.meta',
+	'data/vehiclemodelsets/*.meta',
 	{{ end -}}
 	{{ if .HasVehicles -}}
-	'data/vehicles/**.meta',
+	'data/vehicles/*.meta',
 	{{ end -}}
 	{{ if .HasWeaponsFile -}}
-	'data/weaponsfile/**.meta',
+	'data/weaponsfile/*.meta',
 	{{ end }}
 }
 
 {{ if .HasCarcols -}}
-data_file 'CARCOLS_FILE' 'data/carcols/**.meta'
+data_file 'CARCOLS_FILE' 'data/carcols/*.meta'
 {{ end -}}
 {{ if .HasCarvariations -}}
-data_file 'VEHICLE_VARIATION_FILE' 'data/vehiclevariations/**.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'data/vehiclevariations/*.meta'
 {{ end -}}
 {{ if .HasContentUnlocks -}}
-data_file 'CONTENT_UNLOCKING_META_FILE' 'data/contentunlocks/**.meta'
+data_file 'CONTENT_UNLOCKING_META_FILE' 'data/contentunlocks/*.meta'
 {{ end -}}
 {{ if .HasHandling -}}
-data_file 'HANDLING_FILE' 'data/handling/**.meta'
+data_file 'HANDLING_FILE' 'data/handling/*.meta'
 {{ end -}}
 {{ if .HasVehicleLayouts -}}
-data_file 'VEHICLE_LAYOUTS_FILE' 'data/vehiclelayouts/**.meta'
+data_file 'VEHICLE_LAYOUTS_FILE' 'data/vehiclelayouts/*.meta'
 {{ end -}}
 {{ if .HasVehicleModelsets -}}
-data_file 'AMBIENT_VEHICLE_MODEL_SET_FILE' 'data/vehiclemodelsets/**.meta'
+data_file 'AMBIENT_VEHICLE_MODEL_SET_FILE' 'data/vehiclemodelsets/*.meta'
 {{ end -}}
 {{ if .HasVehicles -}}
-data_file 'VEHICLE_METADATA_FILE' 'data/vehicles/**.meta'
+data_file 'VEHICLE_METADATA_FILE' 'data/vehicles/*.meta'
 {{ end -}}
 {{ if .HasWeaponsFile -}}
-data_file 'WEAPONINFO_FILE' 'data/weaponsfile/**.meta'
+data_file 'WEAPONINFO_FILE' 'data/weaponsfile/*.meta'
 {{ end -}}
 `
